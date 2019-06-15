@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homie</string>
+    <string name="Lux">Plug On</string>
+    <string name="Tenebris">Plug Off</string>
+    <string name="textStatus">Try Pressing a Button</string>
+    <string name="textStdOut">stdout</string>
+    <string name="devBulb1Dimmer">Bulb1_Dimmer</string>
+</resources>

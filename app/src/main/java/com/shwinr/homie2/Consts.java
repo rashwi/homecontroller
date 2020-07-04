@@ -6,6 +6,7 @@ public final class Consts {
     public static final String ON = "Lux";
     public static final String OFF = "Tenebris";
     public static final String BULB_1 = "Bulb1_Dimmer";
+    public static final String BULB_2 = "Bulb2_Dimmer";
     public static final int BUFFER_TIMEOUT = 10000;
     public static final String BUFFER_END = String.format("STOPREADING");
 }

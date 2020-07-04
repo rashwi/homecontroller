@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements AsyncResponse{
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                commandBulb1(progress);
+                commandBulb2(progress);
 
             }
         });
@@ -109,6 +109,18 @@ public class MainActivity extends AppCompatActivity implements AsyncResponse{
         ConnectTask TcpTask = new ConnectTask();
         TcpTask.delegate = this;
         TcpTask.execute(String.format("%s %d", Consts.BULB_1, brightness));
+        System.out.println("Async task kicked off");
+
+    }
+
+    public void commandBulb2(int brightness){
+        TextView textOut = findViewById(R.id.textStatus);
+        textOut.setText(String.format("Brightness : %d", brightness));
+
+        System.out.println(String.format("Setting %s brightness to %d", Consts.BULB_2, brightness));
+        ConnectTask TcpTask = new ConnectTask();
+        TcpTask.delegate = this;
+        TcpTask.execute(String.format("%s %d", Consts.BULB_2, brightness));
         System.out.println("Async task kicked off");
 
     }

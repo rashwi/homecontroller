@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements AsyncResponse{
         ConnectTask TcpTask = new ConnectTask();
         //Connect this task to TcpTask
         TcpTask.delegate = this;
-        TcpTask.execute(Consts.ON);
+        TcpTask.execute(String.format("%s %s", Consts.SWITCH_1, Consts.ON));
         System.out.println("Async Task kicked off.");
 
 
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity implements AsyncResponse{
         ConnectTask TcpTask = new ConnectTask();
         //Connect this task to TcpTask
         TcpTask.delegate = this;
-        TcpTask.execute(Consts.OFF);
+        TcpTask.execute(String.format("%s %s", Consts.SWITCH_1, Consts.OFF));
         System.out.println("Async Task kicked off.");
     }
 

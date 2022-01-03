@@ -15,7 +15,6 @@ import android.util.Log;
 /**
  * TcpClient class to handle conversations over IP
  * File created by ashwin on 06/10/2019
- * HEAVILY borrowed from https://stackoverflow.com/questions/38162775/really-simple-tcp-client
  */
 
 public class TcpClient {

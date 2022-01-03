@@ -9,7 +9,6 @@ import java.util.ArrayList;
 /**
  * ConnectTask class built to separate AsyncTask
  * AsyncTask being used to run tcp/ip comms
- * HEAVILY borrowed from https://stackoverflow.com/questions/38162775/really-simple-tcp-client
  */
 
 public class ConnectTask extends AsyncTask<String, String, TcpClient> {
